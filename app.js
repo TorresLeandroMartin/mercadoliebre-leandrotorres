@@ -28,3 +28,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Corriendo en puerto ' + port));
 
 // funciona?
+
+// a ver si funciona porque no actualiza nada en el visual
