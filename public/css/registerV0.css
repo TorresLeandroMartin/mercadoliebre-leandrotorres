@@ -1,0 +1,397 @@
+:root {
+
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--GrisClaro);
+
+}
+
+.main-header {
+
+    background-color: var(--Amarillo);
+    padding: 20px;
+
+}
+
+main {
+
+    text-align: center;
+
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+img {
+
+    width: 100%;
+
+}
+
+.logo {
+
+    width: 200px;
+
+}
+
+.copy-header {
+
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.burger-button {
+
+    background-color: var(--Celeste);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar {
+
+    display: none;
+
+}
+
+.main-navbar ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-navbar a {
+
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+.banner-image {
+
+    display: flex;
+
+}
+
+/* Estilos del formulario */
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.control-formulario {
+
+
+    padding: 3%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+}
+
+.perfil-usuario {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3%;
+    margin: 3px;
+    font-weight: 1000;
+}
+
+.perfil-usuario .perfil {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px 40px 0px;
+
+}
+
+.perfil-usuario .radio-perfil label {
+
+    margin: 0px 25px 0px 25px;
+
+
+
+}
+
+.perfil-intereses {
+
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 3px;
+    font-weight: 1000;
+
+}
+
+.control-formulario label {
+
+    font-weight: 1000;
+
+}
+
+.control-formulario input{
+
+    margin: 15px 0px 15px 0px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.intereses {
+
+    display: flex;
+    margin: 0px 50px 0px 0px;
+
+}
+
+.checkboxes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.checkbox {
+
+    margin: 15px 15px 0px 15px;
+
+}
+
+.botones {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.boton-formulario {
+
+    width: 20%;
+    height: 2em;
+    margin: 3px 3px;
+
+}
+
+/* Footer */
+
+.bloque-final {
+
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+
+}
+
+footer article i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+.fa-gift {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+.fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+@media (min-width: 769px) {
+
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 5px;
+    }
+
+    .productos {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+
+    }
+
+    .d-name {
+
+        display: initial;
+
+    }
+
+    form {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .boton-formulario {
+
+        width: 15em;
+
+    }
+
+    /* Footer */
+
+    .bloque-final {
+
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+
+
+    }
+
+    footer p {
+
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/*Nos recomendaron este breakpoint en clase*/
+
+@media (min-width: 1200px) {
+
+ .logo {
+    width: 250px;
+
+ }   
+
+ .main-header-top-bar,  .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+ }
+
+ .main-header-top-bar {
+    align-items: center;
+
+
+ }
+
+ .copy-header {
+    margin: 0;
+    max-width: none;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+
+.main-navbar {
+
+    margin-top: 20px;
+
+}
+
+ .main-navbar li {
+    margin: 10px;
+}
+
+.main-navbar a {
+    font-size: 20px;
+}
+
+.productos {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.card {
+
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+}
